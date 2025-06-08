@@ -1,0 +1,4 @@
+{
+    "version" : "1.0.0",
+    "database" : "Host:127.0.0.1 Port:8080 DB_Name:Dev Username:Developer Password:Developer"
+}
