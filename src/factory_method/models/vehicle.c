@@ -140,7 +140,6 @@ void add_load(vehicle_t* vehicle, double_t load, VEHICLE_TYPE type, vehicles_t* 
                 remained_load = cacl_remained_load(remained_load, 0, vehicle->load_capacity);
             }
         }
-
     }
     else {
         vehicle->current_load += load;
