@@ -33,3 +33,4 @@ This pattern's allowing you to create objects that has unique behaviours without
 You're creating a car tracking app. The app needs to track different types of cars like SUVs, Sedans and etc. each with unique behaviours (like SUV may need off-road tracking, while Sedan may focus on city routes). You define a common base (like a Car abstract class or ICar interface) and create subclasses for each vehicle type, but instead of creating those objects directly we use a factory class that can return the correct car type bases on some input like user selection or vehicle data. Factory Method will make your app flexible and open to future types like Electric Cars or Hybrids and more without changin the core logic.
 
 ## Builder - Creational Pattern
+
