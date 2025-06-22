@@ -4,16 +4,16 @@ static config_manager_t* config_manager;
 static void set_config(void);
 
 static config_manager_t* get_instance(pthread_mutex_t *lock) {
+    pthread_mutex_lock(lock);
     if (config_manager == NULL) {
-        pthread_mutex_lock(lock);
         config_manager = (config_manager_t*) calloc(1, sizeof(config_manager_t));
         if (config_manager == NULL) {
             fprintf(stderr, "Memory Allocation!\n");
             return NULL;
         }
         set_config();
-        pthread_mutex_unlock(lock);
     }
+    pthread_mutex_unlock(lock);
 
     return config_manager;    
 }

@@ -72,7 +72,7 @@ static car_t* build(car_builder_t* builder) {
     if (validation(builder)) {
         car->brand = strdup(builder->temp_brand);
         car->model = strdup(builder->temp_model);
-        car->year  æ= builder->temp_year;
+        car->year  = builder->temp_year;
         car->price = builder->temp_price;
         return car;
     }
