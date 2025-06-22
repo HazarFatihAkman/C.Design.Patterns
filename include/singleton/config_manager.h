@@ -19,7 +19,6 @@ extern const struct config_manager_const {
     config_manager_t* (*get_instance)(pthread_mutex_t* lock);
 } config_manager_const;
 
-config_manager_t* config_manager;
 static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 
 #endif // C_DESIGN_PATTERNS_SINGLETON_CONFIG_MANAGER_H

@@ -1,6 +1,6 @@
 #include "../../include/singleton/config_manager.h"
 
-config_manager_t* config_manager;
+static config_manager_t* config_manager;
 static void set_config(void);
 
 static config_manager_t* get_instance(pthread_mutex_t *lock) {

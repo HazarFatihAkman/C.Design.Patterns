@@ -1,5 +1,7 @@
 #include "../../include/singleton/config_manager.h"
 
+static config_manager_t* config_manager;
+
 static void print_version(void) {
     fprintf(stderr, "%s : %s\n", config_manager->version.prefix, config_manager->version.value);
 }
